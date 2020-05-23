@@ -1,0 +1,10 @@
+
+======================== [2015-02-28 15:59:02][/home/bailaohui/blh5mx/CodeIgniter_dev_hlz/application/controllers/cron.php] process start ========================
+[type=>0]|需要更新的关键词总数=>15060|count=>1|loop=>15060
+---------------------[kid=>9910]-START------------------------
+[type=>{$type}]|[page=>{$page}]|[count=>{$this->count}]|关键词=>统招本科|职位ID=>1|被选择的关键词的次数=>0|某position_id中的keyword的个数 * 3=>3|total中的keyword的个数=>1|计算后的该关键词的权值=>4
+[type=>{$type}]|[page=>{$page}]|[count=>{$this->count}]|已存在的关键词ID=>439
+[type=>{$type}]|[page=>{$page}]|[count=>{$this->count}]|描述=>全日制统招本科,5年以上品牌策划、活动策划、媒体关系工作经验,有成功的品牌运作案例;|被选择的描述的次数=>0
+sql=>UPDATE `t_keyword` SET `status` = 1 WHERE `id` =  '9910'
+[type=>{$type}]|[page=>{$page}]|[count=>{$this->count}]|更新为已更新状态=>true
+---------------------[kid=>9910]-END------------------------

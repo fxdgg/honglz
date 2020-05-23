@@ -1,0 +1,3644 @@
+
+======================== [2015-09-27 10:43:00][/home/bailaohui/blh5mx/CodeIgniter_dev_hlz/application/controllers/cron_jd_email.php] process start ========================
+需要推送的JD总数=>49|count=>100|loop=>1
+$allJdListForEmail=><pre>array(16) {
+  ["19_2"]=>
+  array(5) {
+    [0]=>
+    array(32) {
+      ["id"]=>
+      string(2) "19"
+      ["companyName"]=>
+      string(12) "我爱我家"
+      ["companySite"]=>
+      string(22) "http://www.525j.com.cn"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(3) "222"
+      ["demandContent"]=>
+      string(3) "222"
+      ["email"]=>
+      string(24) "shiqiong.mao@525j.com.cn"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "2"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "1"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-15 15:24:05"
+      ["updateTime"]=>
+      string(19) "2015-09-21 14:17:29"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "上海"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [1]=>
+    array(32) {
+      ["id"]=>
+      string(2) "34"
+      ["companyName"]=>
+      string(6) "敢聊"
+      ["companySite"]=>
+      string(21) "http://www.ganliao.tv"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(14) "hr@ruoogle.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "2"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:11:53"
+      ["updateTime"]=>
+      string(19) "2015-09-17 16:58:32"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "上海"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [2]=>
+    array(32) {
+      ["id"]=>
+      string(2) "15"
+      ["companyName"]=>
+      string(15) "巨途技术部"
+      ["companySite"]=>
+      string(19) "http://www.ga-it.cn"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(2) "22"
+      ["demandContent"]=>
+      string(3) "222"
+      ["email"]=>
+      string(21) "hr@m-marketing.com.cn"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "2"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "2"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-15 15:18:41"
+      ["updateTime"]=>
+      string(19) "2015-09-17 16:37:30"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "上海"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [3]=>
+    array(32) {
+      ["id"]=>
+      string(2) "14"
+      ["companyName"]=>
+      string(19) " 票金所技术部"
+      ["companySite"]=>
+      string(27) "https://www.piaojinsuo.com/"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(3) "222"
+      ["demandContent"]=>
+      string(3) "222"
+      ["email"]=>
+      string(17) "hr@piaojinsuo.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "2"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "1"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-15 15:17:48"
+      ["updateTime"]=>
+      string(19) "2015-09-15 15:47:52"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "上海"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [4]=>
+    array(32) {
+      ["id"]=>
+      string(2) "41"
+      ["companyName"]=>
+      string(12) "上海善理"
+      ["companySite"]=>
+      string(24) "http://www.haolinong.com"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(16) "hr@haolinong.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "2"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:15:30"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "上海"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+  }
+  ["19_1"]=>
+  array(21) {
+    [0]=>
+    array(32) {
+      ["id"]=>
+      string(2) "35"
+      ["companyName"]=>
+      string(12) "天星资本"
+      ["companySite"]=>
+      string(20) "http://www.txcap.com"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(16) "youjia@txcap.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "1"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:12:47"
+      ["updateTime"]=>
+      string(19) "2015-09-17 16:59:01"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "北京"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [1]=>
+    array(32) {
+      ["id"]=>
+      string(2) "20"
+      ["companyName"]=>
+      string(12) "普惠金融"
+      ["companySite"]=>
+      string(27) "http://www.puhuifinance.com"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(3) "222"
+      ["demandContent"]=>
+      string(3) "222"
+      ["email"]=>
+      string(24) "zhaopin@puhuifinance.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "1"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "1"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-15 15:25:09"
+      ["updateTime"]=>
+      string(19) "2015-09-17 16:54:08"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "北京"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [2]=>
+    array(32) {
+      ["id"]=>
+      string(2) "16"
+      ["companyName"]=>
+      string(27) "去哪儿网无线事业部"
+      ["companySite"]=>
+      string(13) "www.qunar.com"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(3) "222"
+      ["demandContent"]=>
+      string(3) "222"
+      ["email"]=>
+      string(17) "zhaopin@qunar.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "1"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "1"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-15 15:19:37"
+      ["updateTime"]=>
+      string(19) "2015-09-17 16:38:18"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "北京"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [3]=>
+    array(32) {
+      ["id"]=>
+      string(1) "6"
+      ["companyName"]=>
+      string(22) "测试账户-215941423"
+      ["companySite"]=>
+      string(32) "http://www.lagou.com/jobs/446457"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(3) "222"
+      ["demandContent"]=>
+      string(3) "222"
+      ["email"]=>
+      string(16) "215941423@qq.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "1"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "1"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-11 18:40:15"
+      ["updateTime"]=>
+      string(19) "2015-09-16 16:28:14"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "北京"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [4]=>
+    array(32) {
+      ["id"]=>
+      string(1) "9"
+      ["companyName"]=>
+      string(9) "微金所"
+      ["companySite"]=>
+      string(24) "http://www.weijinsuo.com"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(2) "22"
+      ["demandContent"]=>
+      string(2) "22"
+      ["email"]=>
+      string(16) "hr@weijinsuo.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "1"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "1"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-15 14:46:52"
+      ["updateTime"]=>
+      string(19) "2015-09-15 15:47:22"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "北京"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [5]=>
+    array(32) {
+      ["id"]=>
+      string(2) "21"
+      ["companyName"]=>
+      string(9) "百达屋"
+      ["companySite"]=>
+      string(32) "http://www.betterwood.com/index."
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(3) "222"
+      ["demandContent"]=>
+      string(3) "222"
+      ["email"]=>
+      string(17) "hr@betterwood.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "1"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "1"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-15 15:26:10"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "北京"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [6]=>
+    array(32) {
+      ["id"]=>
+      string(2) "27"
+      ["companyName"]=>
+      string(12) "绿湾网络"
+      ["companySite"]=>
+      string(24) "http://www.lvwan365.com/"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(3) "222"
+      ["demandContent"]=>
+      string(3) "222"
+      ["email"]=>
+      string(22) "yuxianhua@lvwan365.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "1"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-16 16:59:33"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "北京"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [7]=>
+    array(32) {
+      ["id"]=>
+      string(2) "31"
+      ["companyName"]=>
+      string(8) "polysaas"
+      ["companySite"]=>
+      string(23) "http://www.polysaas.com"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(15) "hr@polysaas.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "1"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:10:25"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "北京"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [8]=>
+    array(32) {
+      ["id"]=>
+      string(2) "32"
+      ["companyName"]=>
+      string(12) "互动作业"
+      ["companySite"]=>
+      string(20) "http://www.peidu.com"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(12) "hr@peidu.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "1"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:10:57"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "北京"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [9]=>
+    array(32) {
+      ["id"]=>
+      string(2) "37"
+      ["companyName"]=>
+      string(9) "汇购网"
+      ["companySite"]=>
+      string(22) "http://www.huigou.com/"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(13) "hr@huigou.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "1"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:13:45"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "北京"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [10]=>
+    array(32) {
+      ["id"]=>
+      string(2) "38"
+      ["companyName"]=>
+      string(12) "一块互动"
+      ["companySite"]=>
+      string(22) "http://www.yeecall.com"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(14) "hr@yeecall.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "1"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:14:10"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "北京"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [11]=>
+    array(32) {
+      ["id"]=>
+      string(2) "39"
+      ["companyName"]=>
+      string(12) "京东金融"
+      ["companySite"]=>
+      string(17) "http://jr.jd.com/"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(9) "hr@jd.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "1"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:14:37"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "北京"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [12]=>
+    array(32) {
+      ["id"]=>
+      string(2) "40"
+      ["companyName"]=>
+      string(12) "软通动力"
+      ["companySite"]=>
+      string(26) "http://www.isoftstone.com/"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(17) "hr@isoftstone.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "1"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:15:06"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "北京"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [13]=>
+    array(32) {
+      ["id"]=>
+      string(2) "46"
+      ["companyName"]=>
+      string(9) "云聚汇"
+      ["companySite"]=>
+      string(21) "http://www.yizhibo.tv"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(13) "hr@yizhibo.tv"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "1"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:18:37"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "北京"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [14]=>
+    array(32) {
+      ["id"]=>
+      string(2) "47"
+      ["companyName"]=>
+      string(12) "魔力学院"
+      ["companySite"]=>
+      string(24) "http://www.molistudy.com"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(16) "hr@molistudy.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "1"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:18:58"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "北京"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [15]=>
+    array(32) {
+      ["id"]=>
+      string(2) "48"
+      ["companyName"]=>
+      string(12) "生活日历"
+      ["companySite"]=>
+      string(23) "http://shenghuorili.com"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(19) "hr@shenghuorili.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "1"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:19:17"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "北京"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [16]=>
+    array(32) {
+      ["id"]=>
+      string(2) "49"
+      ["companyName"]=>
+      string(6) "宜信"
+      ["companySite"]=>
+      string(24) "http://www.creditease.cn"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(16) "hr@creditease.cn"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "1"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:19:35"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "北京"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [17]=>
+    array(32) {
+      ["id"]=>
+      string(2) "50"
+      ["companyName"]=>
+      string(9) "追梦网"
+      ["companySite"]=>
+      string(23) "http://www.dreamore.com"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(15) "hr@dreamore.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "1"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:19:59"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "北京"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [18]=>
+    array(32) {
+      ["id"]=>
+      string(2) "51"
+      ["companyName"]=>
+      string(12) "健安华夏"
+      ["companySite"]=>
+      string(24) "http://www.zionchina.com"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(16) "hr@zionchina.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "1"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:20:19"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "北京"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [19]=>
+    array(32) {
+      ["id"]=>
+      string(2) "54"
+      ["companyName"]=>
+      string(12) "宅客投资"
+      ["companySite"]=>
+      string(24) "http://www.iccccloud.com"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(16) "hr@iccccloud.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "1"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:24:35"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "北京"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [20]=>
+    array(32) {
+      ["id"]=>
+      string(2) "55"
+      ["companyName"]=>
+      string(6) "喵卡"
+      ["companySite"]=>
+      string(22) "http://www.miaocard.cn"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(14) "hr@miaocard.cn"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "1"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:25:04"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "北京"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+  }
+  ["19_6"]=>
+  array(2) {
+    [0]=>
+    array(32) {
+      ["id"]=>
+      string(2) "11"
+      ["companyName"]=>
+      string(15) "任我行软件"
+      ["companySite"]=>
+      string(24) "http://www.grasp.com.cn/"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(3) "222"
+      ["demandContent"]=>
+      string(3) "222"
+      ["email"]=>
+      string(16) "job@grasp.com.cn"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "6"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "1"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-15 15:13:18"
+      ["updateTime"]=>
+      string(19) "2015-09-17 16:36:37"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "成都"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [1]=>
+    array(32) {
+      ["id"]=>
+      string(2) "29"
+      ["companyName"]=>
+      string(3) "MCI"
+      ["companySite"]=>
+      string(21) "http://www.mcitech.cn"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(13) "hr@mcitech.cn"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "6"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:08:31"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "成都"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+  }
+  ["19_9"]=>
+  array(1) {
+    [0]=>
+    array(32) {
+      ["id"]=>
+      string(2) "28"
+      ["companyName"]=>
+      string(12) "酷软网络"
+      ["companySite"]=>
+      string(22) "http://www.koosoft.cn/"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(16) "srxhr@topsrx.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "9"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:07:41"
+      ["updateTime"]=>
+      string(19) "2015-09-17 15:29:35"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "西安"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+  }
+  ["5_1"]=>
+  array(1) {
+    [0]=>
+    array(32) {
+      ["id"]=>
+      string(1) "1"
+      ["companyName"]=>
+      string(42) "北京新浪互联网络科技有限公司"
+      ["companySite"]=>
+      string(12) "www.sina.com"
+      ["workExperience"]=>
+      string(1) "5"
+      ["monthlySalary"]=>
+      string(5) "10000"
+      ["describeContent"]=>
+      string(12) "岗位职责"
+      ["demandContent"]=>
+      string(12) "任职描述"
+      ["email"]=>
+      string(16) "394253152@qq.com"
+      ["contact"]=>
+      string(11) "13812345678"
+      ["annualVacation"]=>
+      string(11) "12天年假"
+      ["teamNumber"]=>
+      string(2) "20"
+      ["jobClassId"]=>
+      string(1) "5"
+      ["jobLevelId"]=>
+      string(1) "1"
+      ["areaId"]=>
+      string(1) "1"
+      ["companyTypeId"]=>
+      string(1) "1"
+      ["vocationTypeId"]=>
+      string(1) "1"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "2"
+      ["financeStage"]=>
+      string(4) "B轮"
+      ["workDuration"]=>
+      string(7) "8小时"
+      ["avgYearlySalary"]=>
+      string(3) "20w"
+      ["employeeInsurance"]=>
+      string(12) "五险一金"
+      ["overtimeStatus"]=>
+      string(9) "不加班"
+      ["abilityFeature"]=>
+      string(7) "2|3|4|6"
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-07-07 14:08:33"
+      ["updateTime"]=>
+      string(19) "2015-09-15 19:15:58"
+      ["jobClassName"]=>
+      string(24) "产品策划（移动）"
+      ["jobLevelName"]=>
+      string(9) "初学者"
+      ["areaName"]=>
+      string(6) "北京"
+      ["companyTypeName"]=>
+      string(15) "互联网公司"
+      ["vocationTypeName"]=>
+      string(6) "搜索"
+    }
+  }
+  ["19_5"]=>
+  array(5) {
+    [0]=>
+    array(32) {
+      ["id"]=>
+      string(2) "12"
+      ["companyName"]=>
+      string(12) "同方鼎欣"
+      ["companySite"]=>
+      string(23) "http://www.asdc.com.cn/"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(3) "222"
+      ["demandContent"]=>
+      string(3) "222"
+      ["email"]=>
+      string(14) "hr@asdc.com.cn"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "5"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "1"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-15 15:16:06"
+      ["updateTime"]=>
+      string(19) "2015-09-15 15:47:43"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "杭州"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [1]=>
+    array(32) {
+      ["id"]=>
+      string(1) "8"
+      ["companyName"]=>
+      string(12) "恒生电子"
+      ["companySite"]=>
+      string(22) "http://www.hundsun.com"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(3) "222"
+      ["demandContent"]=>
+      string(3) "222"
+      ["email"]=>
+      string(14) "hr@hundsun.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "5"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "1"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-15 14:45:44"
+      ["updateTime"]=>
+      string(19) "2015-09-15 15:47:13"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "杭州"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [2]=>
+    array(32) {
+      ["id"]=>
+      string(2) "24"
+      ["companyName"]=>
+      string(5) "TuSDK"
+      ["companySite"]=>
+      string(21) "http://www.tusdk.com/"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(3) "222"
+      ["demandContent"]=>
+      string(3) "222"
+      ["email"]=>
+      string(12) "hr@tusdk.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "5"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "1"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-15 15:30:46"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "杭州"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [3]=>
+    array(32) {
+      ["id"]=>
+      string(2) "26"
+      ["companyName"]=>
+      string(12) "绿湾网络"
+      ["companySite"]=>
+      string(24) "http://www.lvwan365.com/"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(3) "222"
+      ["demandContent"]=>
+      string(3) "222"
+      ["email"]=>
+      string(22) "yuxianhua@lvwan365.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "5"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-16 16:58:59"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "杭州"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [4]=>
+    array(32) {
+      ["id"]=>
+      string(2) "36"
+      ["companyName"]=>
+      string(12) "迪安诊断"
+      ["companySite"]=>
+      string(18) "http://www.dazd.cn"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(10) "hr@dazd.cn"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "5"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:13:18"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "杭州"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+  }
+  ["19_10"]=>
+  array(2) {
+    [0]=>
+    array(32) {
+      ["id"]=>
+      string(2) "10"
+      ["companyName"]=>
+      string(12) "谷方科技"
+      ["companySite"]=>
+      string(15) "www.x3china.com"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(3) "222"
+      ["demandContent"]=>
+      string(3) "222"
+      ["email"]=>
+      string(14) "hr@x3china.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(2) "10"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "1"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-15 14:49:12"
+      ["updateTime"]=>
+      string(19) "2015-09-15 15:47:32"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "合肥"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [1]=>
+    array(32) {
+      ["id"]=>
+      string(2) "45"
+      ["companyName"]=>
+      string(12) "掌触科技"
+      ["companySite"]=>
+      string(24) "http://www.zhang-chu.com"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(16) "hr@zhang-chu.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(2) "10"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:18:12"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "合肥"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+  }
+  ["8_1"]=>
+  array(1) {
+    [0]=>
+    array(32) {
+      ["id"]=>
+      string(1) "2"
+      ["companyName"]=>
+      string(36) "北京腾讯科技网络有限公司"
+      ["companySite"]=>
+      string(10) "www.qq.com"
+      ["workExperience"]=>
+      string(1) "5"
+      ["monthlySalary"]=>
+      string(5) "10000"
+      ["describeContent"]=>
+      string(36) "岗位职责&nbsp;&nbsp;&nbsp;&nbsp;"
+      ["demandContent"]=>
+      string(12) "任职描述"
+      ["email"]=>
+      string(16) "394253152@qq.com"
+      ["contact"]=>
+      string(12) "136123456789"
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(2) "20"
+      ["jobClassId"]=>
+      string(1) "8"
+      ["jobLevelId"]=>
+      string(1) "2"
+      ["areaId"]=>
+      string(1) "1"
+      ["companyTypeId"]=>
+      string(1) "1"
+      ["vocationTypeId"]=>
+      string(1) "3"
+      ["isPush"]=>
+      string(1) "1"
+      ["jdPushStatus"]=>
+      string(1) "2"
+      ["financeStage"]=>
+      string(10) "B轮融资"
+      ["workDuration"]=>
+      string(7) "8小时"
+      ["avgYearlySalary"]=>
+      string(2) "20"
+      ["employeeInsurance"]=>
+      string(12) "五险一金"
+      ["overtimeStatus"]=>
+      string(9) "不加班"
+      ["abilityFeature"]=>
+      string(7) "1|3|4|6"
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-07-08 10:50:12"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(24) "产品策划（商业）"
+      ["jobLevelName"]=>
+      string(9) "实干家"
+      ["areaName"]=>
+      string(6) "北京"
+      ["companyTypeName"]=>
+      string(15) "互联网公司"
+      ["vocationTypeName"]=>
+      string(6) "社交"
+    }
+  }
+  ["19_11"]=>
+  array(1) {
+    [0]=>
+    array(32) {
+      ["id"]=>
+      string(2) "17"
+      ["companyName"]=>
+      string(15) "建畅研发部"
+      ["companySite"]=>
+      string(19) "http://www.xbjz.com"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(3) "222"
+      ["demandContent"]=>
+      string(3) "222"
+      ["email"]=>
+      string(11) "hr@xbjz.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(2) "11"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "1"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-15 15:22:18"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "重庆"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+  }
+  ["19_12"]=>
+  array(1) {
+    [0]=>
+    array(32) {
+      ["id"]=>
+      string(2) "22"
+      ["companyName"]=>
+      string(12) "漱玉平民"
+      ["companySite"]=>
+      string(18) "http://www.sypm.cn"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(3) "222"
+      ["demandContent"]=>
+      string(3) "222"
+      ["email"]=>
+      string(10) "hr@sypm.cn"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(2) "12"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "1"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-15 15:27:33"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "济南"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+  }
+  ["19_13"]=>
+  array(1) {
+    [0]=>
+    array(32) {
+      ["id"]=>
+      string(2) "23"
+      ["companyName"]=>
+      string(18) "聚居网技术部"
+      ["companySite"]=>
+      string(20) "http://www.ojuju.com"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(3) "222"
+      ["demandContent"]=>
+      string(3) "222"
+      ["email"]=>
+      string(12) "hr@ojuju.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(2) "13"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "1"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-15 15:29:24"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "长沙"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+  }
+  ["19_14"]=>
+  array(1) {
+    [0]=>
+    array(32) {
+      ["id"]=>
+      string(2) "25"
+      ["companyName"]=>
+      string(12) "明日空间"
+      ["companySite"]=>
+      string(21) "http://www.tomome.com"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(3) "222"
+      ["demandContent"]=>
+      string(3) "222"
+      ["email"]=>
+      string(13) "hr@tomome.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(2) "14"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "1"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-15 15:32:03"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "厦门"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+  }
+  ["19_4"]=>
+  array(2) {
+    [0]=>
+    array(32) {
+      ["id"]=>
+      string(2) "30"
+      ["companyName"]=>
+      string(12) "建乔无线"
+      ["companySite"]=>
+      string(20) "http://www.jianq.com"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(12) "hr@jianq.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "4"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:09:10"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "深圳"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [1]=>
+    array(32) {
+      ["id"]=>
+      string(2) "33"
+      ["companyName"]=>
+      string(9) "创新谷"
+      ["companySite"]=>
+      string(28) "http://www.innovalley.com.cn"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(20) "hr@innovalley.com.cn"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(1) "4"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:11:28"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "深圳"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+  }
+  ["19_15"]=>
+  array(3) {
+    [0]=>
+    array(32) {
+      ["id"]=>
+      string(2) "42"
+      ["companyName"]=>
+      string(9) "大嘴鱼"
+      ["companySite"]=>
+      string(17) "http://www.dzy.cn"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(9) "hr@dzy.cn"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(2) "15"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:16:44"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "武汉"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [1]=>
+    array(32) {
+      ["id"]=>
+      string(2) "43"
+      ["companyName"]=>
+      string(12) "点指传媒"
+      ["companySite"]=>
+      string(22) "http://www.dianzhi.com"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(14) "hr@dianzhi.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(2) "15"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:17:22"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "武汉"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+    [2]=>
+    array(32) {
+      ["id"]=>
+      string(2) "44"
+      ["companyName"]=>
+      string(12) "点智科技"
+      ["companySite"]=>
+      string(22) "http://www.dianzhi.com"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(25) "hr@http://www.dianzhi.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(2) "15"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:17:47"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "武汉"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+  }
+  ["19_20"]=>
+  array(1) {
+    [0]=>
+    array(32) {
+      ["id"]=>
+      string(2) "52"
+      ["companyName"]=>
+      string(12) "脉冲软件"
+      ["companySite"]=>
+      string(23) "http://www.maichong.it/"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(14) "hr@maichong.it"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(2) "20"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:22:13"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "郑州"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+  }
+  ["19_21"]=>
+  array(1) {
+    [0]=>
+    array(32) {
+      ["id"]=>
+      string(2) "53"
+      ["companyName"]=>
+      string(22) "物流邦-正易物通"
+      ["companySite"]=>
+      string(22) "http://www.5656111.com"
+      ["workExperience"]=>
+      string(1) "0"
+      ["monthlySalary"]=>
+      string(1) "0"
+      ["describeContent"]=>
+      string(0) ""
+      ["demandContent"]=>
+      string(0) ""
+      ["email"]=>
+      string(14) "hr@5656111.com"
+      ["contact"]=>
+      string(0) ""
+      ["annualVacation"]=>
+      string(0) ""
+      ["teamNumber"]=>
+      string(1) "0"
+      ["jobClassId"]=>
+      string(2) "19"
+      ["jobLevelId"]=>
+      string(1) "0"
+      ["areaId"]=>
+      string(2) "21"
+      ["companyTypeId"]=>
+      string(1) "0"
+      ["vocationTypeId"]=>
+      string(1) "0"
+      ["isPush"]=>
+      string(1) "0"
+      ["jdPushStatus"]=>
+      string(1) "1"
+      ["financeStage"]=>
+      string(0) ""
+      ["workDuration"]=>
+      string(0) ""
+      ["avgYearlySalary"]=>
+      string(0) ""
+      ["employeeInsurance"]=>
+      string(0) ""
+      ["overtimeStatus"]=>
+      string(0) ""
+      ["abilityFeature"]=>
+      string(0) ""
+      ["state"]=>
+      string(3) "new"
+      ["createTime"]=>
+      string(19) "2015-09-17 15:24:05"
+      ["updateTime"]=>
+      string(19) "0000-00-00 00:00:00"
+      ["jobClassName"]=>
+      string(28) "研发工程师（APP-IOS）"
+      ["jobLevelName"]=>
+      NULL
+      ["areaName"]=>
+      string(6) "天津"
+      ["companyTypeName"]=>
+      NULL
+      ["vocationTypeName"]=>
+      NULL
+    }
+  }
+}
+---------------------[JD-jobClassId=>19]-[JD-jobAreaId=>2]-START------------------------
+last_query=>SELECT `tjrb`.*, `tjjc`.`jobClassName`, `tjja`.`areaName`
+FROM (`tbl_jd_resume_base` tjrb)
+LEFT JOIN `tbl_jd_job_class` tjjc ON `tjjc`.`jobClassId` = `tjrb`.`jobClassId`
+LEFT JOIN `tbl_jd_job_area` tjja ON `tjja`.`areaId` = `tjrb`.`areaId`
+WHERE `tjrb`.`state` =  'new'
+AND `tjrb`.`jobClassId` =  '19'
+AND `tjrb`.`areaId` =  '2'
+AND `tjrb`.`isFindJob` =  2
+AND `tjrb`.`isPushJd` =  0
+AND `tjrb`.`project` !=  ''
+AND `tjrb`.`work_experience` !=  ''
+ORDER BY `tjrb`.`userAge` DESC<br />$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+该list遍历完毕，跳出
+---------------------[JD-jobClassId=>19]-[JD-jobAreaId=>1]-START------------------------
+last_query=>SELECT `tjrb`.*, `tjjc`.`jobClassName`, `tjja`.`areaName`
+FROM (`tbl_jd_resume_base` tjrb)
+LEFT JOIN `tbl_jd_job_class` tjjc ON `tjjc`.`jobClassId` = `tjrb`.`jobClassId`
+LEFT JOIN `tbl_jd_job_area` tjja ON `tjja`.`areaId` = `tjrb`.`areaId`
+WHERE `tjrb`.`state` =  'new'
+AND `tjrb`.`jobClassId` =  '19'
+AND `tjrb`.`areaId` =  '1'
+AND `tjrb`.`isFindJob` =  2
+AND `tjrb`.`isPushJd` =  0
+AND `tjrb`.`project` !=  ''
+AND `tjrb`.`work_experience` !=  ''
+ORDER BY `tjrb`.`userAge` DESC<br />$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+该list遍历完毕，跳出
+---------------------[JD-jobClassId=>19]-[JD-jobAreaId=>6]-START------------------------
+last_query=>SELECT `tjrb`.*, `tjjc`.`jobClassName`, `tjja`.`areaName`
+FROM (`tbl_jd_resume_base` tjrb)
+LEFT JOIN `tbl_jd_job_class` tjjc ON `tjjc`.`jobClassId` = `tjrb`.`jobClassId`
+LEFT JOIN `tbl_jd_job_area` tjja ON `tjja`.`areaId` = `tjrb`.`areaId`
+WHERE `tjrb`.`state` =  'new'
+AND `tjrb`.`jobClassId` =  '19'
+AND `tjrb`.`areaId` =  '6'
+AND `tjrb`.`isFindJob` =  2
+AND `tjrb`.`isPushJd` =  0
+AND `tjrb`.`project` !=  ''
+AND `tjrb`.`work_experience` !=  ''
+ORDER BY `tjrb`.`userAge` DESC<br />$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+该list遍历完毕，跳出
+---------------------[JD-jobClassId=>19]-[JD-jobAreaId=>9]-START------------------------
+last_query=>SELECT `tjrb`.*, `tjjc`.`jobClassName`, `tjja`.`areaName`
+FROM (`tbl_jd_resume_base` tjrb)
+LEFT JOIN `tbl_jd_job_class` tjjc ON `tjjc`.`jobClassId` = `tjrb`.`jobClassId`
+LEFT JOIN `tbl_jd_job_area` tjja ON `tjja`.`areaId` = `tjrb`.`areaId`
+WHERE `tjrb`.`state` =  'new'
+AND `tjrb`.`jobClassId` =  '19'
+AND `tjrb`.`areaId` =  '9'
+AND `tjrb`.`isFindJob` =  2
+AND `tjrb`.`isPushJd` =  0
+AND `tjrb`.`project` !=  ''
+AND `tjrb`.`work_experience` !=  ''
+ORDER BY `tjrb`.`userAge` DESC<br />$allResumeListForEmail=><pre>array(0) {
+}
+该list遍历完毕，跳出
+---------------------[JD-jobClassId=>5]-[JD-jobAreaId=>1]-START------------------------
+last_query=>SELECT `tjrb`.*, `tjjc`.`jobClassName`, `tjja`.`areaName`
+FROM (`tbl_jd_resume_base` tjrb)
+LEFT JOIN `tbl_jd_job_class` tjjc ON `tjjc`.`jobClassId` = `tjrb`.`jobClassId`
+LEFT JOIN `tbl_jd_job_area` tjja ON `tjja`.`areaId` = `tjrb`.`areaId`
+WHERE `tjrb`.`state` =  'new'
+AND `tjrb`.`jobClassId` =  '5'
+AND `tjrb`.`areaId` =  '1'
+AND `tjrb`.`isFindJob` =  2
+AND `tjrb`.`isPushJd` =  0
+AND `tjrb`.`project` !=  ''
+AND `tjrb`.`work_experience` !=  ''
+ORDER BY `tjrb`.`userAge` DESC<br />$allResumeListForEmail=><pre>array(0) {
+}
+该list遍历完毕，跳出
+---------------------[JD-jobClassId=>19]-[JD-jobAreaId=>5]-START------------------------
+last_query=>SELECT `tjrb`.*, `tjjc`.`jobClassName`, `tjja`.`areaName`
+FROM (`tbl_jd_resume_base` tjrb)
+LEFT JOIN `tbl_jd_job_class` tjjc ON `tjjc`.`jobClassId` = `tjrb`.`jobClassId`
+LEFT JOIN `tbl_jd_job_area` tjja ON `tjja`.`areaId` = `tjrb`.`areaId`
+WHERE `tjrb`.`state` =  'new'
+AND `tjrb`.`jobClassId` =  '19'
+AND `tjrb`.`areaId` =  '5'
+AND `tjrb`.`isFindJob` =  2
+AND `tjrb`.`isPushJd` =  0
+AND `tjrb`.`project` !=  ''
+AND `tjrb`.`work_experience` !=  ''
+ORDER BY `tjrb`.`userAge` DESC<br />$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+该list遍历完毕，跳出
+---------------------[JD-jobClassId=>19]-[JD-jobAreaId=>10]-START------------------------
+last_query=>SELECT `tjrb`.*, `tjjc`.`jobClassName`, `tjja`.`areaName`
+FROM (`tbl_jd_resume_base` tjrb)
+LEFT JOIN `tbl_jd_job_class` tjjc ON `tjjc`.`jobClassId` = `tjrb`.`jobClassId`
+LEFT JOIN `tbl_jd_job_area` tjja ON `tjja`.`areaId` = `tjrb`.`areaId`
+WHERE `tjrb`.`state` =  'new'
+AND `tjrb`.`jobClassId` =  '19'
+AND `tjrb`.`areaId` =  '10'
+AND `tjrb`.`isFindJob` =  2
+AND `tjrb`.`isPushJd` =  0
+AND `tjrb`.`project` !=  ''
+AND `tjrb`.`work_experience` !=  ''
+ORDER BY `tjrb`.`userAge` DESC<br />$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+该list遍历完毕，跳出
+---------------------[JD-jobClassId=>8]-[JD-jobAreaId=>1]-START------------------------
+last_query=>SELECT `tjrb`.*, `tjjc`.`jobClassName`, `tjja`.`areaName`
+FROM (`tbl_jd_resume_base` tjrb)
+LEFT JOIN `tbl_jd_job_class` tjjc ON `tjjc`.`jobClassId` = `tjrb`.`jobClassId`
+LEFT JOIN `tbl_jd_job_area` tjja ON `tjja`.`areaId` = `tjrb`.`areaId`
+WHERE `tjrb`.`state` =  'new'
+AND `tjrb`.`jobClassId` =  '8'
+AND `tjrb`.`areaId` =  '1'
+AND `tjrb`.`isFindJob` =  2
+AND `tjrb`.`isPushJd` =  0
+AND `tjrb`.`project` !=  ''
+AND `tjrb`.`work_experience` !=  ''
+ORDER BY `tjrb`.`userAge` DESC<br />$allResumeListForEmail=><pre>array(0) {
+}
+该list遍历完毕，跳出
+---------------------[JD-jobClassId=>19]-[JD-jobAreaId=>11]-START------------------------
+last_query=>SELECT `tjrb`.*, `tjjc`.`jobClassName`, `tjja`.`areaName`
+FROM (`tbl_jd_resume_base` tjrb)
+LEFT JOIN `tbl_jd_job_class` tjjc ON `tjjc`.`jobClassId` = `tjrb`.`jobClassId`
+LEFT JOIN `tbl_jd_job_area` tjja ON `tjja`.`areaId` = `tjrb`.`areaId`
+WHERE `tjrb`.`state` =  'new'
+AND `tjrb`.`jobClassId` =  '19'
+AND `tjrb`.`areaId` =  '11'
+AND `tjrb`.`isFindJob` =  2
+AND `tjrb`.`isPushJd` =  0
+AND `tjrb`.`project` !=  ''
+AND `tjrb`.`work_experience` !=  ''
+ORDER BY `tjrb`.`userAge` DESC<br />$allResumeListForEmail=><pre>array(0) {
+}
+该list遍历完毕，跳出
+---------------------[JD-jobClassId=>19]-[JD-jobAreaId=>12]-START------------------------
+last_query=>SELECT `tjrb`.*, `tjjc`.`jobClassName`, `tjja`.`areaName`
+FROM (`tbl_jd_resume_base` tjrb)
+LEFT JOIN `tbl_jd_job_class` tjjc ON `tjjc`.`jobClassId` = `tjrb`.`jobClassId`
+LEFT JOIN `tbl_jd_job_area` tjja ON `tjja`.`areaId` = `tjrb`.`areaId`
+WHERE `tjrb`.`state` =  'new'
+AND `tjrb`.`jobClassId` =  '19'
+AND `tjrb`.`areaId` =  '12'
+AND `tjrb`.`isFindJob` =  2
+AND `tjrb`.`isPushJd` =  0
+AND `tjrb`.`project` !=  ''
+AND `tjrb`.`work_experience` !=  ''
+ORDER BY `tjrb`.`userAge` DESC<br />$allResumeListForEmail=><pre>array(0) {
+}
+该list遍历完毕，跳出
+---------------------[JD-jobClassId=>19]-[JD-jobAreaId=>13]-START------------------------
+last_query=>SELECT `tjrb`.*, `tjjc`.`jobClassName`, `tjja`.`areaName`
+FROM (`tbl_jd_resume_base` tjrb)
+LEFT JOIN `tbl_jd_job_class` tjjc ON `tjjc`.`jobClassId` = `tjrb`.`jobClassId`
+LEFT JOIN `tbl_jd_job_area` tjja ON `tjja`.`areaId` = `tjrb`.`areaId`
+WHERE `tjrb`.`state` =  'new'
+AND `tjrb`.`jobClassId` =  '19'
+AND `tjrb`.`areaId` =  '13'
+AND `tjrb`.`isFindJob` =  2
+AND `tjrb`.`isPushJd` =  0
+AND `tjrb`.`project` !=  ''
+AND `tjrb`.`work_experience` !=  ''
+ORDER BY `tjrb`.`userAge` DESC<br />$allResumeListForEmail=><pre>array(0) {
+}
+该list遍历完毕，跳出
+---------------------[JD-jobClassId=>19]-[JD-jobAreaId=>14]-START------------------------
+last_query=>SELECT `tjrb`.*, `tjjc`.`jobClassName`, `tjja`.`areaName`
+FROM (`tbl_jd_resume_base` tjrb)
+LEFT JOIN `tbl_jd_job_class` tjjc ON `tjjc`.`jobClassId` = `tjrb`.`jobClassId`
+LEFT JOIN `tbl_jd_job_area` tjja ON `tjja`.`areaId` = `tjrb`.`areaId`
+WHERE `tjrb`.`state` =  'new'
+AND `tjrb`.`jobClassId` =  '19'
+AND `tjrb`.`areaId` =  '14'
+AND `tjrb`.`isFindJob` =  2
+AND `tjrb`.`isPushJd` =  0
+AND `tjrb`.`project` !=  ''
+AND `tjrb`.`work_experience` !=  ''
+ORDER BY `tjrb`.`userAge` DESC<br />$allResumeListForEmail=><pre>array(0) {
+}
+该list遍历完毕，跳出
+---------------------[JD-jobClassId=>19]-[JD-jobAreaId=>4]-START------------------------
+last_query=>SELECT `tjrb`.*, `tjjc`.`jobClassName`, `tjja`.`areaName`
+FROM (`tbl_jd_resume_base` tjrb)
+LEFT JOIN `tbl_jd_job_class` tjjc ON `tjjc`.`jobClassId` = `tjrb`.`jobClassId`
+LEFT JOIN `tbl_jd_job_area` tjja ON `tjja`.`areaId` = `tjrb`.`areaId`
+WHERE `tjrb`.`state` =  'new'
+AND `tjrb`.`jobClassId` =  '19'
+AND `tjrb`.`areaId` =  '4'
+AND `tjrb`.`isFindJob` =  2
+AND `tjrb`.`isPushJd` =  0
+AND `tjrb`.`project` !=  ''
+AND `tjrb`.`work_experience` !=  ''
+ORDER BY `tjrb`.`userAge` DESC<br />$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+该list遍历完毕，跳出
+---------------------[JD-jobClassId=>19]-[JD-jobAreaId=>15]-START------------------------
+last_query=>SELECT `tjrb`.*, `tjjc`.`jobClassName`, `tjja`.`areaName`
+FROM (`tbl_jd_resume_base` tjrb)
+LEFT JOIN `tbl_jd_job_class` tjjc ON `tjjc`.`jobClassId` = `tjrb`.`jobClassId`
+LEFT JOIN `tbl_jd_job_area` tjja ON `tjja`.`areaId` = `tjrb`.`areaId`
+WHERE `tjrb`.`state` =  'new'
+AND `tjrb`.`jobClassId` =  '19'
+AND `tjrb`.`areaId` =  '15'
+AND `tjrb`.`isFindJob` =  2
+AND `tjrb`.`isPushJd` =  0
+AND `tjrb`.`project` !=  ''
+AND `tjrb`.`work_experience` !=  ''
+ORDER BY `tjrb`.`userAge` DESC<br />$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+$allResumeListForEmail=><pre>array(0) {
+}
+该list遍历完毕，跳出
+---------------------[JD-jobClassId=>19]-[JD-jobAreaId=>20]-START------------------------
+last_query=>SELECT `tjrb`.*, `tjjc`.`jobClassName`, `tjja`.`areaName`
+FROM (`tbl_jd_resume_base` tjrb)
+LEFT JOIN `tbl_jd_job_class` tjjc ON `tjjc`.`jobClassId` = `tjrb`.`jobClassId`
+LEFT JOIN `tbl_jd_job_area` tjja ON `tjja`.`areaId` = `tjrb`.`areaId`
+WHERE `tjrb`.`state` =  'new'
+AND `tjrb`.`jobClassId` =  '19'
+AND `tjrb`.`areaId` =  '20'
+AND `tjrb`.`isFindJob` =  2
+AND `tjrb`.`isPushJd` =  0
+AND `tjrb`.`project` !=  ''
+AND `tjrb`.`work_experience` !=  ''
+ORDER BY `tjrb`.`userAge` DESC<br />$allResumeListForEmail=><pre>array(0) {
+}
+该list遍历完毕，跳出
+---------------------[JD-jobClassId=>19]-[JD-jobAreaId=>21]-START------------------------
+last_query=>SELECT `tjrb`.*, `tjjc`.`jobClassName`, `tjja`.`areaName`
+FROM (`tbl_jd_resume_base` tjrb)
+LEFT JOIN `tbl_jd_job_class` tjjc ON `tjjc`.`jobClassId` = `tjrb`.`jobClassId`
+LEFT JOIN `tbl_jd_job_area` tjja ON `tjja`.`areaId` = `tjrb`.`areaId`
+WHERE `tjrb`.`state` =  'new'
+AND `tjrb`.`jobClassId` =  '19'
+AND `tjrb`.`areaId` =  '21'
+AND `tjrb`.`isFindJob` =  2
+AND `tjrb`.`isPushJd` =  0
+AND `tjrb`.`project` !=  ''
+AND `tjrb`.`work_experience` !=  ''
+ORDER BY `tjrb`.`userAge` DESC<br />$allResumeListForEmail=><pre>array(0) {
+}
+该list遍历完毕，跳出
+
+======================== [2015-09-27 10:43:00][/home/bailaohui/blh5mx/CodeIgniter_dev_hlz/application/controllers/cron_jd_email.php] process end ========================
