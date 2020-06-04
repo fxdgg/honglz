@@ -66,7 +66,7 @@ table tr.tr-title td{
 <form method="get" class="form-inline">
      <div class="search-inline mt10" style="height:auto">
         <em><input id="jdDomain" type="hidden" value="<?php echo APP_SITE_URL;?>" /></em>
-        <a href="<?php echo APP_SITE_URL;?>/admin/jd_base_insert">添加JD基本信息</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="<?php echo APP_SITE_URL;?>/admin/jd_base_insert">添加供需基本信息</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="http://www.taichangle.com/" target="_blank" >文字转图片</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
         <!--<label>选择职位：</label>
@@ -120,7 +120,7 @@ table tr.tr-title td{
     <thead>
     <tr height="22" bgcolor="#EEEEEE">
         <th width="5%" align="center"><b>操作</b></th>
-        <th width="5%" height="25" align="center"><b>JDID</b></th>
+        <th width="5%" height="25" align="center"><b>ID</b></th>
         <th width="20%" height="25" align="center"><b>供需概述</b></th>
         <th width="10%" align="center"><b>地区</b></th>
         <th width="15%" align="center"><b>信息分类</b></th>
@@ -154,8 +154,8 @@ table tr.tr-title td{
         <td align="center" title="<?php echo $data['companyName'];?>"><div style="overflow:hidden;"><?php echo $data['companyName'];?></div></td>
         <td align="center" ><div style="overflow:hidden;"><?php echo (isset($jobAreaList[$data['areaId']]['areaName']) ? $jobAreaList[$data['areaId']]['areaName'] : '暂无');?></div></td>
         <td align="center" ><div style="overflow:hidden;"><?php echo (isset($jobClassList[$data['jobClassId']]['jobClassName']) ? $jobClassList[$data['jobClassId']]['jobClassName'] : '暂无');?></div></td>
-        <td align="center" title="<?php echo $data['describeContent'];?>"><div style="overflow:hidden;"><?php echo $data['describeContent']; ?></div></td>
-        <td align="center" title="<?php echo $data['demandContent'];?>"><div style="overflow:hidden;"><?php echo $data['demandContent']; ?></div></td>
+        <td align="center" title="<?php echo mb_substr($data['describeContent'], 0, 50);?>"><div style="overflow:hidden;"><?php echo !empty($data['describeContent']) ? mb_substr($data['describeContent'], 0, 50) : '暂无'; ?></div></td>
+        <td align="center" title="<?php echo mb_substr($data['demandContent'], 0, 50);?>"><div style="overflow:hidden;"><?php echo !empty($data['demandContent']) ? mb_substr($data['demandContent'], 0, 50) : '暂无'; ?></div></td>
       <!--  <td align="center"><div style="overflow:hidden;"><?php echo (isset($jobLevelList[$data['jobLevelId']]['jobLevelName']) ? $jobLevelList[$data['jobLevelId']]['jobLevelName'] : '暂无');?></div></td>
        <td align="center" ><a href="<?php echo $data['companySite'];?>" target="_blank">链接</a></td>
 
@@ -179,7 +179,7 @@ table tr.tr-title td{
     </tbody>
     <thead>
     <tr>
-        <td bgcolor="#FFFFFF" height="25" colspan="21">
+        <td bgcolor="#FFFFFF" height="25" colspan="7">
             <div align="center"><?php echo $pageShow;?></div>
         </td>
     </tr>

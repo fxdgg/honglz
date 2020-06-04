@@ -139,7 +139,7 @@ select#chosepackage{
   </tr>
   <tr>
     <td bgcolor="#FFFFFF" height="31" colspan="4">
-        <div align="center" class="black_14_bold" id="welcome_title_divid">JD基础信息录入</div>
+        <div align="center" class="black_14_bold" id="welcome_title_divid">供需信息录入</div>
     </td>
   </tr>
   <tr bgcolor="#FFFFFF">
@@ -198,13 +198,13 @@ select#chosepackage{
   </tr>
 
   <tr bgcolor="#FFFFFF">
-    <td width="15%" align="right" height="25" class="tilte"><b><span id="content_spanid">外部介绍信息：</span></b></td>
+    <td width="15%" align="right" height="25" class="tilte"><b><span id="content_spanid">外部介绍信息（题主说）：</span></b></td>
     <td width="35%" colspan="3" class="inputClass">
     <textarea id="describeContent" name="entry[describeContent]" style="width:500px;height:100px"></textarea>
     </td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="15%" align="right" height="25" class="tilte"><b><span id="content_spanid">内部介绍信息：</span></b></td>
+    <td width="15%" align="right" height="25" class="tilte"><b><span id="content_spanid">内部介绍信息（小编说）：</span></b></td>
     <td width="35%" colspan="3" class="inputClass">
     <textarea id="demandContent" name="entry[demandContent]" style="width:500px;height:100px"></textarea>
     </td>

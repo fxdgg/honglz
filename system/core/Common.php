@@ -350,15 +350,19 @@ if ( ! function_exists('log_message'))
 {
 	function log_message($level = 'error', $message, $php_error = FALSE)
 	{
-		static $_log;
+		static $_log, $logId;
 
 		if (config_item('log_threshold') == 0)
 		{
 			return;
 		}
+        if ($logId === NULL)
+        {
+            $logId = sprintf('%x', (intval(microtime(true) * 10000) % 864000000) * 10000 + mt_rand(0, 9999));
+        }
 
 		$_log =& load_class('Log');
-		$_log->write_log($level, $message, $php_error);
+		$_log->write_log($level, sprintf('[%s] ---> %s', $logId, $message), $php_error);
 	}
 }
 

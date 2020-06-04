@@ -94,5 +94,9 @@ define('REDIS_PORT_R', '6379');
 define('REDIS_HOST_W', '127.0.0.1');
 define('REDIS_PORT_W', '6379');
 
+defined('WECHAT_APPID')        OR define('WECHAT_APPID', 'wxbabe2e00844cbb0a');
+defined('WECHAT_TOKEN')        OR define('WECHAT_TOKEN', 'honglizhi');
+defined('WECHAT_AESKEY')       OR define('WECHAT_AESKEY', 'yxEAGQ7EtBTO7Q8uhx19CcKs0iOnyGBbXfKvP7wwHNT');
+
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */

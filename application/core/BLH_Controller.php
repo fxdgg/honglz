@@ -3,7 +3,7 @@
 class BLH_Controller extends CI_Controller{
     protected $_userid = 0;
     protected $third_userid = 0;
-    protected $login_error_data = array('status'=>FALSE, 'errcode'=>-100, 'errmsg'=>'please login first!');
+    protected $login_error_data = array('status'=>FALSE, 'errcode'=>-100, 'errmsg'=>'please login first!', 'errmsg_zh'=>'您尚未登录或登录已过期，请重新登录');
     protected static $skip_auth_api = array('pics'=>array('p'));
     protected $weibo;
     public $appkey;

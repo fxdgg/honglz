@@ -46,7 +46,7 @@ class Jdjobbase extends CI_Model{
     /**
      * 获取JD-基础表的列表-分页
      */
-    public function fetchAllJdBaseList($page = 1, $pagesize = 50, $isAdmin = FALSE, $state = '', $isPush = '-1', $jdPushStatus = '-1', $isForceNew = FALSE, $jobClassId = 0)
+    public function fetchAllJdBaseList($page = 1, $pagesize = 50, $isAdmin = FALSE, $state = '', $isPush = '-1', $jdPushStatus = '-1', $isForceNew = FALSE, $jobClassId = 0, $jobId = 0)
     {
         $this->db->select('tjjb.*,tjjc.jobClassName,tjjl.jobLevelName,tjja.areaName,tjjct.companyTypeName,tjjvt.vocationTypeName');
         $this->db->join('tbl_jd_job_class tjjc', 'tjjc.jobClassId = tjjb.jobClassId', 'LEFT');
@@ -59,16 +59,17 @@ class Jdjobbase extends CI_Model{
         $jdPushStatus == -2 && $this->db->where('tjjb.jdPushStatus > ', 0);//JD的邮件推送状态(0:暂停发送1:营销中2:推荐中)
         $jdPushStatus >= 0 && $this->db->where('tjjb.jdPushStatus', $jdPushStatus);//JD的邮件推送状态(0:暂停发送1:营销中2:推荐中)
         $jobClassId > 0 && $this->db->where('tjjb.jobClassId', $jobClassId);//职位分类编号
+        $jobId > 0 && $this->db->where('tjjb.id', $jobId);
         $isAdmin && !empty($state) && $this->db->where('tjjb.state', $state);
         $this->db->order_by('tjjb.updateTime DESC');
         $this->db->limit($pagesize, ($page-1)*$pagesize);
         $query = $this->db->get($this->_table . ' tjjb');
         $res = $query->result_array();
-        //echo 'last_query=>'.$this->db->last_query().'<br />';
+        // echo 'last_query=>'.$this->db->last_query().'<br />';
         return !empty($res) ? $res : array();
     }
 
-    public function allJdBaseListTotal($isAdmin = FALSE, $state = '', $isPush = '-1', $jdPushStatus = '-1', $isForceNew = FALSE, $jobClassId = 0, $areaId = 0)
+    public function allJdBaseListTotal($isAdmin = FALSE, $state = '', $isPush = '-1', $jdPushStatus = '-1', $isForceNew = FALSE, $jobClassId = 0, $areaId = 0, $jobId = 0)
     {
         $this->db->select('tjjb.*,tjjc.jobClassName,tjjl.jobLevelName,tjja.areaName,tjjct.companyTypeName,tjjvt.vocationTypeName');
         $this->db->join('tbl_jd_job_class tjjc', 'tjjc.jobClassId = tjjb.jobClassId', 'LEFT');
@@ -83,6 +84,7 @@ class Jdjobbase extends CI_Model{
         $isAdmin && !empty($state) && $this->db->where('tjjb.state', $state);
         $jobClassId > 0 && $this->db->where('tjjb.jobClassId > ', 0);
         $areaId > 0 && $this->db->where('tjjb.areaId > ', 0);
+        $jobId > 0 && $this->db->where('tjjb.id', $jobId);
         $query = $this->db->get($this->_table . ' tjjb');
         $total = count($query->result_array());
         //echo __FUNCTION__.'|last_query=>'.$this->db->last_query().'<br />';
@@ -121,6 +123,8 @@ class Jdjobbase extends CI_Model{
     public function createJdBaseInfo(&$params, $returnLastId = FALSE)
     {
         $data = array(
+            'type' => isset($params['type']) ? intval($params['type']) : 0,
+            'creatorUid' => !empty($params['creatorUid']) ? intval($params['creatorUid']) : 0,
             'companyName' => isset($params['companyName']) ? htmlspecialchars($params['companyName']) : '',
             'companySite' => isset($params['companySite']) ? htmlspecialchars($params['companySite']) : '',
             'jdUrl' => isset($params['jdUrl']) ? $params['jdUrl'] : '',
@@ -144,6 +148,7 @@ class Jdjobbase extends CI_Model{
             'employeeInsurance' => isset($params['employeeInsurance']) ? htmlspecialchars($params['employeeInsurance']) : '',
             'overtimeStatus' => isset($params['overtimeStatus']) ? htmlspecialchars($params['overtimeStatus']) : '',
             'abilityFeature' => isset($params['abilityFeatureString']) ? htmlspecialchars($params['abilityFeatureString']) : '',
+            'createTime' => date('Y-m-d H:i:s'),
             'state' => 'new',
         );
         $ret = $this->db->insert($this->_table, $data);
@@ -205,5 +210,83 @@ class Jdjobbase extends CI_Model{
     {
         $this->db->where('id', $id);
         return $this->db->delete($this->_table);
+    }
+
+    /**
+     * 获取供需列表-按行业分组
+     */
+    public function fetchDemandListGroup($page = 1, $pagesize = 20, $type = 1)
+    {
+        $this->db->select(array('GROUP_CONCAT(`id` ORDER BY updateTime DESC) as groupIds'));
+        $this->db->where('type', $type);
+        $this->db->where('state', 'new');
+        $this->db->group_by('companyTypeId');
+        $this->db->limit($pagesize, ($page-1)*$pagesize);
+        $query = $this->db->get($this->_table);
+        // echo __FUNCTION__.'|last_query=>'.$this->db->last_query().'<br />';
+        $res = $query->result_array();
+        return !empty($res) ? $res : array();
+    }
+
+    /**
+     * 获取供需列表-分页
+     */
+    public function fetchDemandList($ids = [], $page = 1, $pagesize = 20, $timeRange = [], $condition = [], $type = 1)
+    {
+        $this->db->select('id,type,companyName,describeContent,demandContent,companyTypeId,abilityFeature,createTime,updateTime');
+        !empty($ids) && $this->db->where_in('id', $ids);
+        $this->db->where('type', $type);
+        $this->db->where('state', 'new');
+        if (!empty($timeRange)) {
+            $this->db->ar_where[] = " AND `createTime` BETWEEN '{$timeRange[0]}' AND '{$timeRange[1]}'";
+        }
+        // 行业分类
+        if (!empty($condition['companyTypeId'])) {
+            $this->db->where('companyTypeId', (int)$condition['companyTypeId']);
+        }
+        $this->db->order_by('updateTime DESC');
+        $this->db->limit($pagesize, ($page-1)*$pagesize);
+        $query = $this->db->get($this->_table);
+        $res = $query->result_array();
+        // echo __FUNCTION__.'|last_query=>'.$this->db->last_query().'<br />';
+        return !empty($res) ? $res : array();
+    }
+
+    /**
+     * 获取供需列表-总数
+     */
+    public function fetchDemandTotal($ids = [], $timeRange = [], $condition = [], $type = 1) {
+        $this->db->select('*');
+        !empty($ids) && $this->db->where_in('id', $ids);
+        $this->db->where('type', $type);
+        $this->db->where('state', 'new');
+        if (!empty($timeRange)) {
+            $this->db->ar_where[] = " AND `createTime` BETWEEN '{$timeRange[0]}' AND '{$timeRange[1]}'";
+        }
+        // 行业分类
+        if (!empty($condition['companyTypeId'])) {
+            $this->db->where('companyTypeId', (int)$condition['companyTypeId']);
+        }
+        $query = $this->db->get($this->_table);
+        $total = count($query->result_array());
+        // echo __FUNCTION__.'|last_query=>'.$this->db->last_query().'<br />';
+        return $total;
+    }
+
+    /**
+     * 获取某条信息
+     * @param int $id 编号
+     */
+    public function fetchInfoById($id, $type = 1)
+    {
+        $this->db->select();
+        $this->db->where('id', $id);
+        $this->db->where('type', $type);
+        $this->db->where('state', 'new');
+        $this->db->limit(1);
+        $query = $this->db->get($this->_table);
+        $res = $query->row_array();
+        //echo 'last_query=>'.$this->db->last_query().'<br />';
+        return !empty($res) ? $res : array();
     }
 }

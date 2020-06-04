@@ -139,7 +139,7 @@ select#chosepackage{
   </tr>
   <tr>
     <td bgcolor="#FFFFFF" height="31" colspan="4">
-        <div align="center" class="black_14_bold" id="welcome_title_divid">JD基础信息更新<input type="hidden" id="id" name="entry[id]" value="<?php echo $jdInfo['id'];?>" style="width:500px" /></div>
+        <div align="center" class="black_14_bold" id="welcome_title_divid">供需信息更新<input type="hidden" id="id" name="entry[id]" value="<?php echo $jdInfo['id'];?>" style="width:500px" /></div>
     </td>
   </tr>
   <tr bgcolor="#FFFFFF">
@@ -193,14 +193,14 @@ select#chosepackage{
     </td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="15%" align="right" height="25" class="tilte"><b><span id="content_spanid">外部介绍信息：</span></b></td>
+    <td width="15%" align="right" height="25" class="tilte"><b><span id="content_spanid">外部介绍信息（题主说）：</span></b></td>
     <td width="35%" colspan="3" class="inputClass">
         <!-- <textarea id="editor_id_1" name="entry[describeContent]" style="width:300px;height:100px;"></textarea> -->
         <textarea id="editor_id_1" name="entry[describeContent]" style="width:500px;height:500px;"><?php echo $jdInfo['describeContent'];?></textarea><span id="msg_editor_id_1" class="warning"></span>
     </td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="15%" align="right" height="25" class="tilte"><b><span id="content_spanid">内部介绍信息：</span></b></td>
+    <td width="15%" align="right" height="25" class="tilte"><b><span id="content_spanid">内部介绍信息（小编说）：</span></b></td>
     <td width="35%" colspan="3" class="inputClass">
         <!-- <textarea id="editor_id_2" name="entry[demandContent]" style="width:300px;height:100px;"></textarea> -->
         <textarea id="editor_id_2" name="entry[demandContent]" style="width:500px;height:500px;"><?php echo $jdInfo['demandContent'];?></textarea><span id="msg_editor_id_2" class="warning"></span>
@@ -285,7 +285,7 @@ select#chosepackage{
     </td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="15%" align="right" height="25" class="tilte"><b>公司类型：</b></td>
+    <td width="15%" align="right" height="25" class="tilte"><b>公司类型（供求行业）：</b></td>
     <td width="35%" colspan="3" class="inputClass">
         <select id="companyTypeId" name="entry[companyTypeId]" style="width:500px;" data-placeholder="请选择" class="chzn-select-self">
         	<option value='0'>---请选择---</option>
@@ -351,7 +351,7 @@ select#chosepackage{
     </td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="15%" align="right" height="25" class="tilte"><b>能力特征词：</b></td>
+    <td width="15%" align="right" height="25" class="tilte"><b>能力特征词（标签）：</b></td>
     <td width="35%" colspan="3">
         <!-- <input type="checkbox" id="checkall" onclick="reverse_check('abilityFeature[]')" title="全选/不选" />全选/反选<br /> -->
         <?php

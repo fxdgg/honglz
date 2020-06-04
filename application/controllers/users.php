@@ -876,4 +876,32 @@ class Users extends BLH_Controller{
         }
         BLH_Utilities::outputError($this->login_error_data['errcode'], $this->lang->line('user_login_failed'));
     }
+
+    /**
+     * 登录页面
+     */
+    public function login_page()
+    {
+        include(APPPATH . 'libraries/BLH_BrowserChecker.php');
+        $bc = new BLH_BrowserChecker();
+        if ($bc->isIOS() OR $bc->isAndroid())
+        {
+            $isView = 'mobile';
+        }else{
+            $isView = 'pc';
+        }
+        $params = array(
+            'isView' => $isView,
+        );
+        $this->load->view('default/login_page', $params);
+    }
+
+    public function logout_page()
+    {
+        if($this->auth(TRUE, TRUE))
+        {
+            $this->session->sess_destroy();
+        }
+        BLH_Utilities::showmessage('退出成功，请重新登录', APP_SITE_URL . '/users/login_page');
+    }
 }

@@ -37,7 +37,7 @@ class Userinfo extends CI_Model{
         'ui.qq','ui.weibo','ui.weixin','ui.other',/*'ui.icon',*/'ui.blogUrl','ui.iconUrl','ui.invitedby','ui.inviteIntro','ui.inviteCount','ui.publicemail','ui.publicsex',
         'ui.publiccompany','ui.publicposition','ui.publiccellphone','ui.publicqq','ui.publicweibo','ui.publicweixin','ui.publicother','ui.status',
         'ui.usertype','ui.createTime','ui.updateTime','ui.disableReason','ui.career','ui.area','ui.birthday','ui.isMarried','ui.signature','ui.sinaUserId',
-        'ui.qqUserId','ui.lastActivity','ui.vocation','ui.workDate','ui.gradeSchool','ui.category','ui.isHlz',
+        'ui.qqUserId','ui.lastActivity','ui.vocation','ui.workDate','ui.gradeSchool','ui.category','ui.isHlz','ui.subjection_uid','ui.my_money','ui.partner_money','ui.actual_money'
     );
     /**
      * 是否开启缓存
@@ -213,6 +213,26 @@ class Userinfo extends CI_Model{
         if (isset($data['category']) && !empty($data['category']))
         {
             $data['category'] = htmlspecialchars($data['category']);
+        }
+        // 隶属于哪个用户ID
+        if (isset($data['subjection_uid']) && !empty($data['subjection_uid']))
+        {
+            $data['subjection_uid'] = intval($data['subjection_uid']);
+        }
+        // 自有金额，单位分
+        if (isset($data['my_money']) && !empty($data['my_money']))
+        {
+            $data['my_money'] = intval($data['my_money']);
+        }
+        // 合作者金额，单位分
+        if (isset($data['partner_money']) && !empty($data['partner_money']))
+        {
+            $data['partner_money'] = intval($data['partner_money']);
+        }
+        // 实际金额，单位分
+        if (isset($data['actual_money']) && !empty($data['actual_money']))
+        {
+            $data['actual_money'] = intval($data['actual_money']);
         }
         $res = $this->db->update($this->_table, $data);
         //开启缓存的处理
@@ -1079,4 +1099,83 @@ class Userinfo extends CI_Model{
         return $ret;
     }
 
+    /**
+     * 按页获取所有用户列表
+     * @param int $page
+     * @param int $pagesize
+     * @return array
+     */
+    public function fetchAllUserByPage($page = 1, $pagesize = 100)
+    {
+        //查询这些字段的数据
+        $this->db->select(array_merge($this->_allFields));
+        $this->db->where('status != ' . $this->USER_STATUS_STOPPED);
+        $this->db->order_by('ui.id ASC');
+        $this->db->limit($pagesize, ($page-1)*$pagesize);
+        $query = $this->db->get($this->_table . ' ui');
+        $list = $query->result_array();
+        // echo 'last_query=>'.$this->db->last_query().'<br />';
+        return !empty($list) ? $list : array();
+    }
+
+    /**
+     * 获取所有用户数量
+     * @param bool $fromCache
+     * @return bool|mixed
+     */
+    public function fetchAllUserCount($fromCache = false)
+    {
+        //开启缓存的处理
+        if ($fromCache)
+        {
+            $cache_key = sprintf("%s|%s", __CLASS__, __FUNCTION__);
+            $total_data = $this->getCacheData($cache_key);
+            if (is_numeric($total_data) && $total_data > 0)
+            {
+                return $total_data;
+            }
+        }
+
+        $this->db->where('status != ' . $this->USER_STATUS_STOPPED);
+        $total_data = $this->db->count_all_results($this->_table);
+        // echo __FUNCTION__.'|last_query=>'.$this->db->last_query().'|total_data:'.$total_data.'<br />';
+        if ($fromCache && $total_data > 0)
+        {
+            $this->setCacheData($cache_key, $total_data, 3600 * 10);
+        }
+        return $total_data;
+    }
+
+    /**
+     * 根据不同的uid，获取总金额
+     * @param   int  $uid
+     * @param string $field
+     * @return array
+     */
+    public function fetchMySumMoney($uid, $field = 'subjection_uid')
+    {
+        $this->db->select_sum('my_money');
+        $this->db->where($field, (int)$uid);
+        $this->db->limit(1);
+        $query = $this->db->get($this->_table);
+        $res = $query->row_array();
+        // echo 'last_query=>'.$this->db->last_query().'<br />';
+        return !empty($res) ? $res : array();
+    }
+
+    /**
+     * 根据不同的uid，获取合作者列表
+     * @param   int  $uid
+     * @param string $field
+     * @return array
+     */
+    public function fetchPartnerList($uid, $field = 'subjection_uid')
+    {
+        $this->db->select('*');
+        $this->db->where($field, (int)$uid);
+        $query = $this->db->get($this->_table);
+        $list = $query->result_array();
+        // echo 'last_query=>'.$this->db->last_query().'<br />';
+        return !empty($list) ? $list : array();
+    }
 }

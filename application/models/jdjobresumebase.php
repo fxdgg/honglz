@@ -128,7 +128,7 @@ class Jdjobresumebase extends CI_Model{
         $page > 0 && $this->db->limit($pagesize, ($page-1) * $pagesize);
         $query = $this->db->get($this->_table . ' tjrb');
         $res = $query->result_array('jobClassId', '', 'LIST');
-        echo __FUNCTION__.'|last_query=>'.$this->db->last_query().'<br />';
+        // echo __FUNCTION__.'|last_query=>'.$this->db->last_query().'<br />';
         return !empty($res) ? $res : array();
     }
 

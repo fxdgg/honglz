@@ -1799,9 +1799,9 @@ class Admin extends BLH_Controller {
                             $this->Jdjobabilitymap->createJdAbilityMap($lastId, $abilityFeatureId);
                         }
                     }
-                    $message[] = 'JD信息-录入成功';
+                    $message[] = '供需信息-录入成功';
                 }else{
-                    $message[] =  'JD信息-录入失败';
+                    $message[] =  '供需信息-录入失败';
                 }
                 BLH_Utilities::showmessage(join(',', $message), APP_SITE_URL.'/admin/jd_base_list');
             }else{
@@ -1816,13 +1816,13 @@ class Admin extends BLH_Controller {
                 $jobAreaList = $this->Jdjobarea->fetchAllJdJobAreaList(0, 0, TRUE, 'new');
                 //获取公司类型列表
                 $this->load->model('Jdjobcompanytype');
-                $jobCompanyTypeList = $this->Jdjobcompanytype->fetchAllJdJobCompanyTypeList(0, 0, TRUE, 'new');
+                $jobCompanyTypeList = $this->Jdjobcompanytype->fetchAllJdJobCompanyTypeList(0, 0, TRUE, 'new', 1);
                 //获取行业类别列表
                 $this->load->model('Jdjobvocationtype');
                 $jobVocationTypeList = $this->Jdjobvocationtype->fetchAllJdJobVocationTypeList(0, 0, TRUE, 'new');
                 //获取能力特征词列表
                 $this->load->model('Jdjobabilityfeature');
-                $jobAbilityFeatureList = $this->Jdjobabilityfeature->fetchAllJdJobAbilityFeatureList(0, 0, TRUE, 'new');
+                $jobAbilityFeatureList = $this->Jdjobabilityfeature->fetchAllJdJobAbilityFeatureList(0, 0, TRUE, 'new', 1);
                 $params = array(
                     'title' => $this->common_data['title'],
                     'jobClassList' => $jobClassList,
@@ -1856,6 +1856,7 @@ class Admin extends BLH_Controller {
         $jdPushStatus = isset($get['jdPushStatus']) ? (int)$get['jdPushStatus'] : '1';//JD的邮件推送状态(0:暂停发送1:营销中2:推荐中)
         $state = isset($get['state']) ? ($get['state'] == -1 ? '' : htmlspecialchars($get['state'])) : 'new';
         $jobClassId = isset($get['jobClassId']) ? (int)$get['jobClassId'] : '0';
+        $jobId = isset($get['id']) ? (int)$get['id'] : '0';
         $page = max(1, (isset($get['page']) ? (int)$get['page'] : 1));
         $pagesize = isset($get['pagenum']) ? min(100, (int)$get['pagenum']) : 50;
         //判断权限
@@ -1865,8 +1866,8 @@ class Admin extends BLH_Controller {
         {
             $this->load->model('Jdjobbase');
             $isForceNew = $get ? FALSE : TRUE;
-            $jdBaseList = $this->Jdjobbase->fetchAllJdBaseList($page, $pagesize, TRUE, $state, $isPush, $jdPushStatus, $isForceNew, $jobClassId);
-            $jdBaseTotal = $this->Jdjobbase->allJdBaseListTotal(TRUE, $state, $isPush, $jdPushStatus, $isForceNew, $jobClassId);
+            $jdBaseList = $this->Jdjobbase->fetchAllJdBaseList($page, $pagesize, TRUE, $state, $isPush, $jdPushStatus, $isForceNew, $jobClassId, $jobId);
+            $jdBaseTotal = $this->Jdjobbase->allJdBaseListTotal(TRUE, $state, $isPush, $jdPushStatus, $isForceNew, $jobClassId, 0, $jobId);
             //分页显示
             $class_file = APPPATH . 'libraries/' . BLH_Utilities::$subclass_prefix . 'Pager' . '.php';
             BLH_Utilities::require_only($class_file);
@@ -1945,7 +1946,7 @@ class Admin extends BLH_Controller {
                     BLH_Utilities::showmessage('非法请求');
                 }
                 $data = $post_data['entry'];
-                //岗位职责
+                //岗位职责-外部介绍信息/题主说
                 if (!empty($data['describeContent'])) {
                     if (get_magic_quotes_gpc()) {
                         $data['describeContent'] = stripslashes($data['describeContent']);
@@ -1953,7 +1954,7 @@ class Admin extends BLH_Controller {
                         $data['describeContent'] = $data['describeContent'];
                     }
                 }
-                //任职描述
+                //任职描述-内部介绍信息-小编说
                 if (!empty($data['demandContent'])) {
                     if (get_magic_quotes_gpc()) {
                         $data['demandContent'] = stripslashes($data['demandContent']);
@@ -1976,9 +1977,9 @@ class Admin extends BLH_Controller {
                             $this->Jdjobabilitymap->createJdAbilityMap($lastId, $abilityFeatureId);
                         }
                     }
-                    $message[] = 'JD信息-更新成功';
+                    $message[] = '供需信息-更新成功';
                 }else{
-                    $message[] =  'JD信息-更新失败';
+                    $message[] =  '供需信息-更新失败';
                 }
                 BLH_Utilities::showmessage(join(',', $message), APP_SITE_URL.'/admin/jd_base_list?page='.$currentPage);//'/admin/jd_base_edit?id='.$data['id']
             }else{
@@ -1996,13 +1997,13 @@ class Admin extends BLH_Controller {
                 $jobAreaList = $this->Jdjobarea->fetchAllJdJobAreaList(0, 0, TRUE, 'new');
                 //获取公司类型列表
                 $this->load->model('Jdjobcompanytype');
-                $jobCompanyTypeList = $this->Jdjobcompanytype->fetchAllJdJobCompanyTypeList(0, 0, TRUE, 'new');
+                $jobCompanyTypeList = $this->Jdjobcompanytype->fetchAllJdJobCompanyTypeList(0, 0, TRUE, 'new', 1);
                 //获取行业类别列表
                 $this->load->model('Jdjobvocationtype');
                 $jobVocationTypeList = $this->Jdjobvocationtype->fetchAllJdJobVocationTypeList(0, 0, TRUE, 'new');
                 //获取能力特征词列表
                 $this->load->model('Jdjobabilityfeature');
-                $jobAbilityFeatureList = $this->Jdjobabilityfeature->fetchAllJdJobAbilityFeatureList(0, 0, TRUE, 'new');
+                $jobAbilityFeatureList = $this->Jdjobabilityfeature->fetchAllJdJobAbilityFeatureList(0, 0, TRUE, 'new', 1);
 
                 $params = array(
                     'title' => $this->common_data['title'],
@@ -2458,6 +2459,139 @@ class Admin extends BLH_Controller {
             }
         }
         $this->print_err(1, '无操作权限', 1, true);
+    }
+
+    /**
+     * 获取JD-对接列表
+     */
+    public function jd_supply_list()
+    {
+        //未登录/登录失效后跳转到登录页面
+        if (!$this->auth(true))
+        {
+            $this->load->library('session');
+            $this->session->sess_destroy();
+            $this->jsJumpUrl(APP_SITE_URL . '/admin/login');
+        }
+        $get = $this->input->get();
+        $state = isset($get['state']) ? ($get['state'] == -1 ? '' : htmlspecialchars($get['state'])) : 'new';
+        $supplyId = isset($get['id']) ? (int)$get['id'] : 0;
+        $needId = isset($get['nid']) ? (int)$get['nid'] : 0;
+        $page = max(1, (isset($get['page']) ? (int)$get['page'] : 1));
+        $pagesize = isset($get['pagenum']) ? min(100, (int)$get['pagenum']) : 50;
+        //判断权限
+        $this->load->library('session');
+        $user_data = $this->session->userdata('user_data');
+        if (isset($user_data->id) && !empty($user_data->id) && $user_data->blhRole == self::UNION_ROLE_SYSTEM)
+        {
+            $this->load->model('Jdsupply');
+            $isForceNew = $get ? FALSE : TRUE;
+            $jdSupplyList = $this->Jdsupply->fetchAllJdSupplyList($page, $pagesize, TRUE, $state, $isForceNew, $supplyId, $needId);
+            $jdSupplyTotal = $this->Jdsupply->allJdSupplyListTotal(TRUE, $state, $isForceNew, $supplyId, $needId);
+            //分页显示
+            $classFile = APPPATH . 'libraries/' . BLH_Utilities::$subclass_prefix . 'Pager' . '.php';
+            BLH_Utilities::require_only($classFile);
+            $Pager = new BLH_Pager(array('pagesize'=>$pagesize, 'count'=>$jdSupplyTotal));
+
+            $params = array(
+                'title' => $this->common_data['title'],
+                'state' => $state,
+                'jdSupplyList' => $jdSupplyList,
+                'total' => $jdSupplyTotal,
+                'pageShow' => $Pager->show(),
+                'page' => $page,
+                'id' => $supplyId,
+                'nid' => $needId,
+            );
+            $this->load->view('admin/admin_jd_supply_list', $params);
+        }else{
+            BLH_Utilities::showmessage('该用户被拒绝访问');
+        }
+    }
+
+    /**
+     * JD-对接信息更新
+     */
+    public function jd_supply_edit()
+    {
+        //未登录/登录失效后跳转到登录页面
+        if (!$this->auth(true))
+        {
+            $this->load->library('session');
+            $this->session->sess_destroy();
+            $this->jsJumpUrl(APP_SITE_URL . '/admin/login');
+        }
+        //判断权限
+        $this->load->library('session');
+        $user_data = $this->session->userdata('user_data');
+        if (isset($user_data->id) && !empty($user_data->id) && $user_data->blhRole == self::UNION_ROLE_SYSTEM)
+        {
+            $get = $this->input->get();
+            $supplyId = isset($get['id']) ? (int)$get['id'] : 0;
+            $currentPage = isset($get['page']) ? (int)$get['page'] : 1;
+            $message = array();
+            if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] == 'POST')
+            {
+                $post_data = $this->input->post(NULL, TRUE);
+                if (!isset($post_data['editPosts']) OR empty($post_data['entry']))
+                {
+                    BLH_Utilities::showmessage('非法请求');
+                }
+                $data = $post_data['entry'];
+                // 可提供的资源
+                if (!empty($data['resource'])) {
+                    if (get_magic_quotes_gpc()) {
+                        $data['resource'] = stripslashes($data['resource']);
+                    } else {
+                        $data['resource'] = $data['resource'];
+                    }
+                }
+                // 联系方式
+                if (!empty($data['contact'])) {
+                    if (get_magic_quotes_gpc()) {
+                        $data['contact'] = stripslashes($data['contact']);
+                    } else {
+                        $data['contact'] = $data['contact'];
+                    }
+                }
+                $this->load->model('Jdsupply');
+                $lastId = $this->Jdsupply->updateBaseInfo($data);
+                if ($lastId > 0)
+                {
+                    $message[] = '对接信息-更新成功';
+                }else{
+                    $message[] =  '对接信息-更新失败';
+                }
+                BLH_Utilities::showmessage(join(',', $message), APP_SITE_URL.'/admin/jd_supply_list?page='.$currentPage);//'/admin/jd_supply_edit?id='.$data['id']
+            }else{
+                //获取该JD的基本信息
+                $this->load->model('Jdsupply');
+                $supplyInfo = $this->Jdsupply->fetchInfoById($supplyId, true);
+                // 提问人的用户ID
+                $supplyInfo['asker_name'] = '';
+                if (!empty($supplyInfo['asker_uid'])) {
+                    $this->load->model('Userinfo');
+                    $askerUserInfo = $this->Userinfo->fetch_user_data($supplyInfo['asker_uid']);
+                    $supplyInfo['asker_name'] = !empty($askerUserInfo['nickname']) ? $askerUserInfo['nickname'] : '';
+                }
+                // 需求ID
+                $supplyInfo['need_title'] = '';
+                if (!empty($supplyInfo['need_id'])) {
+                    $this->load->model('Jdjobbase');
+                    $needInfo = $this->Jdjobbase->fetchJdBaseInfoById($supplyInfo['need_id']);
+                    $supplyInfo['need_title'] = !empty($needInfo['companyName']) ? $needInfo['companyName'] : '';
+                }
+
+                $params = array(
+                    'title' => $this->common_data['title'],
+                    'supplyInfo' => $supplyInfo,
+                    'page' => $currentPage,
+                );
+                $this->load->view('admin/admin_jd_supply_edit', $params);
+            }
+        }else{
+            BLH_Utilities::showmessage('该用户被拒绝访问');
+        }
     }
 
 }

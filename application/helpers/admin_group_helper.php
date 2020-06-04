@@ -278,6 +278,18 @@ return array (
         'server_type' => '10',
         'has' => 1,
       ),
+      96 =>
+          array (
+              'id' => '96',
+              'parentid' => '24',
+              'name' => '对接列表',
+              'path' => APP_SITE_URL . '/admin/jd_supply_list',
+              'locality' => '2',
+              'isview' => '1',
+              'status' => '1',
+              'server_type' => '10',
+              'has' => 1,
+          ),
     ),
     'has' => 1,
   ),
