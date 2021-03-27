@@ -1,2 +1,2 @@
-# CodeIgniter_hlz
-CodeIgniter_hlz
+# honglz
+一款简单实用的，基于CI框架开发的简历管理后台。
